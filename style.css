@@ -1,0 +1,211 @@
+/*import google fonts */
+@import url("https://www.flaticon.com/free-icon/check_4210407?term=attendance&page=1&position=3&page=1&position=3&related_id=4210407&origin=search");
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+body{
+    background: orange, hsl(228, 98%, 48%);
+
+}
+nav{
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    left: 0;
+    /* width: 90px;*/ 
+    width: 90px;
+    background: hsl(0, 0%, 99%);
+    overflow:auto;
+    transition: 1s;
+}
+nav:hover{
+    width:280px;
+    transition: 1s;
+}
+.logo{
+    text-align: center;
+    display: flex;
+    margin:10px 0 0 10px;
+    padding-bottom: 3rem;
+}
+.logo img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.logo span{
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+a{
+    position: relative;
+    width: 200%;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    display: table;
+    padding: 10px;
+}
+nav .fas{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+.nav-item{
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+a:hover{
+    background: rgb(103, 102, 102);
+}
+a:hover i{
+    color: #ffffff;
+    transition: 1s;
+}
+.logout{
+    position:absolute;
+    bottom: 0;
+}
+.container{
+    display: flex;
+}
+
+/*Main Section*/
+.main{
+    position: relative;
+    padding: 20px;
+    width: 100%;
+}
+.main-top{
+    display: flex;
+    width: 100%;
+}
+.main-top i{
+    position: absolute;
+    right: 0;
+    margin: 10px 30px;
+    color: rgb(110,109,109);
+    cursor:pointer ;
+}
+.main .users{
+    display: flex;
+    width: 100%;
+}
+.users .card{
+    width: 25%;
+    margin: 10px;
+    background: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 20px 35px rgba(101, 101, 0, 0.512);
+}
+.users .card img{
+    width: 80px;
+    height: 80px;
+    border-radius: 60%;
+}
+.users .card h4{
+    text-transform: uppercase;
+}
+.users .card p{
+    font-size: 12px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.users table{
+    margin: auto;
+}
+.users .per span{
+    padding: 5px;
+    border-radius: 10px;
+    background: rgb(223,223, 223);
+}
+.users td{
+    font-size: 14px;
+    padding-right: 15px;
+}
+.users .card button{
+    width: 100%;
+    margin-top: 8px;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid rgb(128, 0, 62);
+}
+.users .card button:hover{
+    background: rgb(37, 35, 61);
+    color: #fff;
+    transition: 0.5s;
+}
+
+/*Attendance List Section*/
+.attendance{
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+.attendance-list{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #002701;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(13, 3, 33, 0.744);
+}
+.table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 15px;
+    min-width: 100%;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+table thead tr{
+    color: #fff;
+    background:rgb(0, 104, 110);
+    text-align: left;
+    font-weight: bold;
+}
+.table th,
+.table td{
+    padding: 12px 15px;
+}
+.table tbody tr{
+    border-bottom: 1px solid #ddd;
+}
+.table tbody tr:nth-of-type(even){
+    background: #f3f3f3;
+}
+.table tbody tr.active{
+    font-weight: bold;
+    color: #19242fcc;
+}
+.table tbody tr:last-of-type{
+    border-bottom: 2px solid rgb(38, 24, 51);
+}
+.table button{
+    padding: 6px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid rgb(255, 128, 0);
+}
+.table button:hover{
+    background: rgb(0, 255, 191);
+    color: #fff;
+    transition: 0.5rem;
+}
