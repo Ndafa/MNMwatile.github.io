@@ -11,5 +11,8 @@
 body{
     background: linear-gradient( rgb(96, 96, 96), hsl(17, 42%, 55%));
     bottom: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 

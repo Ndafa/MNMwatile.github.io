@@ -162,7 +162,7 @@ a:hover i{
     width: 100%;
     padding: 10px;
     margin-top: 10px;
-    background: #002701;
+    background: #003366;
     border-radius: 10px;
     box-shadow: 0 20px 35px rgba(13, 3, 33, 0.744);
 }
@@ -175,20 +175,21 @@ a:hover i{
     border-radius: 5px 5px 0 0;
 }
 table thead tr{
-    color: #fff;
-    background:rgb(0, 104, 110);
+    color: #24233a;
+    background:rgb(3, 26, 51);
     text-align: left;
     font-weight: bold;
 }
 .table th,
 .table td{
     padding: 12px 15px;
+    color: white;
 }
 .table tbody tr{
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #424f82;
 }
 .table tbody tr:nth-of-type(even){
-    background: #f3f3f3;
+    background: #2d2d55;
 }
 .table tbody tr.active{
     font-weight: bold;

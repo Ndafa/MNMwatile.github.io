@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylee.css">
+    <title>Meeting Room</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+        .meeting-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .start-meeting-button,button {
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 20px;
+            background-color: aqua;
+        }
+        h1,p{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="meeting-container">
+        <h1>Welcome to the Meeting Room</h1>
+        <p>Click the button below to start the meeting.</p>
+        <button class="start-meeting-button" onclick="startMeeting()">Start Meeting</button>
+        <button><span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
+            <span class="visually-hidden" role="status">Loading...</span><a href="home.html">BACK</a></button>
+    </div>
+
+    <script>
+        function startMeeting() {
+            // Implement logic to start the meeting
+            alert("Meeting started!");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cellphone Chat Dialog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            justify-content: center;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .chat-container {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            max-width: 300px;
+            width: 100%;
+            padding: 10px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
+            height: 400px;
+            margin-bottom: 20px;
+        }
+        .message {
+            padding: 10px;
+            margin: 5px;
+            border-radius: 10px;
+            max-width: 70%;
+            display: inline-block;
+        }
+        .user-message {
+            background-color: #DCF8C6;
+            align-self: flex-start;
+        }
+        .other-message {
+            background-color: #E5E5EA;
+            align-self: flex-end;
+        }
+        .message-input {
+            width: 70%;
+            padding: 10px;
+            margin-right: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .send-button {
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container" id="chatContainer">
+        <div class="message user-message">Hello! How can I help you today?</div>
+        <div class="message other-message">Hi! I have a question about your products.</div>
+    </div>
+    <input type="text" id="messageInput" class="message-input" placeholder="Type a message...">
+    <button class="send-button" onclick="sendMessage()">Send</button>
+    <a href="home.html"><button>Leave</button></a>
+
+    <script>
+        function sendMessage() {
+            const messageInput = document.getElementById('messageInput');
+            const messageText = messageInput.value;
+
+            if (messageText.trim() !== '') {
+                const chatContainer = document.getElementById('chatContainer');
+                const messageElement = document.createElement('div');
+                messageElement.classList.add('message', 'user-message');
+                messageElement.innerText = messageText;
+                chatContainer.appendChild(messageElement);
+                messageInput.value = '';
+                chatContainer.scrollTop = chatContainer.scrollHeight;
+            }
+        }
+    </script>
+</body>
+</html>
